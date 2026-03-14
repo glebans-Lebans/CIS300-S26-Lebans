@@ -8,6 +8,11 @@
 
     /* Font */
     --font: 'Noto Sans', sans-serif;
+
+    /* Shadows */
+    --lg-shadow: 4px 4px 10px var(--text);
+    --sm-shadow: 2px 2px 5px var(--text);
+    --hd-shadow: 4px 1px 10px var(--text);
 }
 
 * {
@@ -26,20 +31,36 @@ header, main, footer {
     background-color: var(--background);
     color: var(--text);
     border: 4px solid var(--primary);
-    box-shadow: 4px 4px 4px var(--text);
+    box-shadow: var(--lg-shadow);
 }
 
+/* Header */
 header {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     justify-content: center;
     align-items: center;
     position: sticky;
+    top: 0;
     z-index: 2;
     padding: 0 1rem;
-    box-shadow: 4px 1px 4px var(--text);
+    box-shadow: var(--hd-shadow);
 }
 
+header h1 a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+header h1 a:hover {
+    color: var(--primary);
+}
+
+header h1 a:focus {
+    outline: 2px solid var(--primary);
+}
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     display: grid;
@@ -52,38 +73,103 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
     color: var(--secondary);
     background-color: var(--text);
     border-radius: 8px;
+    box-shadow: var(--lg-shadow);
 }
 
+nav a:hover {
+    color: var(--text);
+    background-color: var(--secondary);
+    box-shadow: var(--sm-shadow);
+}
+
+nav a:focus {
+    outline: 2px solid var(--primary);
+}
+
+/* Main */
 main {
     padding: 1rem;
 }
 
 main a {
     text-decoration: none;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: var(--secondary);
     background-color: var(--text);
     border-radius: 8px;
     padding: 0 0.5rem;
 }
 
+main a:hover {
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+main a:focus {
+    outline: 2px solid var(--primary);
+}
+
+/* Home Showcase Section */
+#homeshowcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    border: 4px solid var(--primary);
+}
+
+#homeshowcase h2, p {
+    grid-column: 1/-1;
+    margin: auto;
+    padding: 1rem;
+}
+
+#homeshowcase h3 {
+    text-align: center;
+}
+
+/* Back to Top Button */
 #btt {
     display: flex;
     justify-content: flex-end;
+    padding-top: 1rem
 }
 
+/* Footer */
 footer {
-    padding: 0 1rem;
+    padding: 0 0.9rem;
     text-align: center;
+}
+
+footer h2 {
+    font-size: 1rem;
 }
 
 footer a {
     text-decoration: none;
-    padding: 1rem;
+    color: var(--text);
+    padding: 0 1rem;
 }
 
+footer a:visited {
+    color: var(--primary);
+}
+
+footer a:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+footer a:focus {
+    outline: 2px solid var(--primary);
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-style: italic;
+}
 
 
