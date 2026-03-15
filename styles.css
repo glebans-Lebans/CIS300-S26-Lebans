@@ -116,6 +116,7 @@ main a:focus {
     outline: 2px solid var(--primary);
 }
 
+/* Home Page */
 #home-intro {
     padding: 2rem;
     z-index: 1;
@@ -166,12 +167,11 @@ main a:focus {
 #homeshowcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
     border: 4px solid var(--primary);
     padding-top: 0;
 }
 
-#homeshowcase h2, p {
+#homeshowcase h2, #homeshowcase p {
     grid-column: 1/-1;
     margin: auto;
     padding: 1rem;
@@ -179,6 +179,20 @@ main a:focus {
 
 #homeshowcase h3 {
     text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.showcase-item img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;    
+}
+
+.showcase-item p {
+    text-align: center;
+    padding-top: 0;
 }
 
 /* Back to Top Button */
