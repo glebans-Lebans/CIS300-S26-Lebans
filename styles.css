@@ -116,6 +116,14 @@ main a:focus {
     outline: 2px solid var(--primary);
 }
 
+p {
+    max-width: 55ch;
+}
+
+img {
+    display: block;
+}
+
 /* Home Page */
 #home-intro {
     padding: 2rem;
@@ -171,28 +179,27 @@ main a:focus {
     padding-top: 0;
 }
 
-#homeshowcase h2, #homeshowcase p {
+#homeshowcase > h2, #homeshowcase > p {
     grid-column: 1/-1;
     margin: auto;
     padding: 1rem;
 }
 
 #homeshowcase h3 {
-    text-align: center;
     padding-bottom: 0;
+    padding-left: 1rem;
     margin-bottom: 0;
 }
 
 .showcase-item img{
-    display: block;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;    
 }
 
 .showcase-item p {
-    text-align: center;
     padding-top: 0;
+    padding-left: 1rem;
 }
 
 /* Back to Top Button */
@@ -233,6 +240,9 @@ footer a:focus {
 footer p {
     font-size: 0.8rem;
     font-style: italic;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
 }
 
 
