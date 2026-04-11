@@ -345,6 +345,7 @@ input[type=submit]:focus {
 /* Contact External Links */
 #links {
     display: flex;
+    gap: 5px;
     width: 100px;
     margin: auto;
 }
