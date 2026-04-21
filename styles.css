@@ -288,7 +288,7 @@ td {
 }
 
 /* Portfolio Showcase Section */
-#pshowcase, #pshowcase-2, #pshowcase-3 {
+#illustrations, #photography, #models {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
@@ -297,19 +297,19 @@ td {
     padding-bottom: 1rem;
 }
 
-#pshowcase > h2, #pshowcase > p, #pshowcase-2 > h2, #pshowcase-2 > p, #pshowcase-3 > h2, #pshowcase-3 > p {
+#illustrations > h2, #illustrations > p, #photography > h2, #photography > p, #models > h2, #models > p {
     grid-column: 1/-1;
     margin: auto;
     padding: 1rem;
 }
 
-#pshowcase h3, #pshowcase-2 h3, #pshowcase-3 h3 {
+#illustrations h3, #photography h3, #models h3 {
     padding-bottom: 0;
     padding-left: 1rem;
     margin-bottom: 0;
 }
 
-#pshowcase a, #pshowcase-2 a, #pshowcase-3 a {
+#illustrations a, #photography a, #models a {
     padding: 0;
 }
 
