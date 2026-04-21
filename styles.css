@@ -140,6 +140,10 @@ video {
     display: block;
 }
 
+.current {
+    border-bottom: 2px solid var(--tertiary);
+}
+
 /* Home Page */
 #home-intro {
     padding: 2rem;
@@ -387,6 +391,7 @@ input[type=submit]:hover {
     background-color: var(--secondary);
     border-color: var(--secondary);
     box-shadow: var(--sm-shadow);
+    transition: background-color 0.25s ease-in, color 0.25s ease-in, border-color 0.25s ease-in, box-shadow 0.25s ease-in;
 }
 
 input[type=submit]:focus {
