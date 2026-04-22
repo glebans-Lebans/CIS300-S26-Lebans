@@ -93,7 +93,7 @@ nav a:hover {
     color: var(--text);
     background-color: var(--secondary);
     box-shadow: var(--sm-shadow);
-    transition: background-color 0.25s ease-in, color 0.25s ease-in;
+    transition: background-color 0.25s ease-in, color 0.25s ease-in, box-shadow 0.25s ease-in;
 }
 
 nav a:focus {
@@ -325,6 +325,55 @@ td {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+#prints {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-top: 4px solid var(--primary);
+    padding-top: 0;
+}
+
+#prints > h2, #prints > p {
+    grid-column: 1/-1;
+    margin: auto;
+    padding: 1rem;
+}
+
+#prints p {
+    padding-bottom: 2rem;
+}
+
+#prints h3 {
+    padding-bottom: 0;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.showcase-item form {
+    width: auto;
+}
+
+fieldset {
+    display: flex;
+    border-radius: 4px;
+}
+
+fieldset label, fieldset input {
+    margin: auto;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+fieldset input {
+    width: 30%;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0.25rem;
 }
 
 /* Contact Form */
